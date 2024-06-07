@@ -1,0 +1,61 @@
+///fonts///
+$font-primary: 'AeonikProTRIAL';
+$font-secondary: "Mochiy Pop One";
+$font-size: 20px;
+$section-title: 32px;
+$line-height: 1.5;
+$color: #212121;
+$font-weight: 400;
+
+///colors///
+$white: #fff;
+$black: #000;
+$dark_bg: #151515;
+$green: #33D896;
+$grey-light: #CFCFCF;
+$yellow: #FEB200;
+$red: #B20000;
+$grey: #6B7A8F;
+$grey-dark: #17282F;
+$grey-middle: #F9F9F9;
+$grey-page: #F1F1F1;
+$brown-color: #EAE8DD;
+
+$primary-color: #FF7E00;
+$secondary-color: #33535F;
+$tertiary-color: #00A39C;
+$green-hover: #7DF4CD;
+$modal-color: #808080;
+$calculator-color: #F4F4F4;
+
+
+$bg-style-primary: linear-gradient(90deg, #FEB200 0%, #FFD71D 104.65%);
+$bg-style-primary-reverse: linear-gradient(90deg, #FFD71D 0%, #FEB200 104.65%);
+$bg-style-secondary: linear-gradient(90deg, #003800 0%, #006F00 104.65%);
+$bg-style-secondary-reverse: linear-gradient(90deg, #006F00 0%, #003800 104.65%);
+$bg-style-secondary-2: linear-gradient(90deg, #003800 0%, #003800 104.65%);
+$bg-style-item: linear-gradient(90deg, #F5F5F5 0%, #F5F5F5 104.65%);
+$bg-modal: #F4F1E7;
+$bg-footer: linear-gradient(90deg, #003800 0%, #006F00 50.26%, #003800 100%);
+
+$label-red: #F93838;
+$label-purpur: #8683EF;
+$label-green: #70D61F;
+
+$required: $primary-color;
+$placeholder: #bdbdbd;
+
+$breadcrumbs-slash: $secondary-color;
+$breadcrumbs-link: $tertiary-color;
+$breadcrumbs-link-hover: $primary-color;
+$breadcrumbs-last-child: #B2B1B1;
+
+$muve-top-background: $primary-color;
+$muve-top-color: #fff;
+
+.main-gradient {
+    background: rgb(125,244,205);
+    background: -moz-linear-gradient(-45deg,  rgba(125,244,205,1) 0%, rgba(254,178,0,1) 65%, rgba(255,126,0,1) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgba(125,244,205,1) 0%,rgba(254,178,0,1) 65%,rgba(255,126,0,1) 100%);
+    background: linear-gradient(135deg,  rgba(125,244,205,1) 0%,rgba(254,178,0,1) 65%,rgba(255,126,0,1) 100%);
+}
