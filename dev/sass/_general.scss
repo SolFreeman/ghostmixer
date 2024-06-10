@@ -14,7 +14,7 @@ html {
 	&:before {
 		position: absolute;
 		content: '';
-		top: -60%;
+		top: -10%;
 		left: auto;
 		right: auto;
 		width: 100%;
@@ -23,13 +23,13 @@ html {
 		background-repeat: no-repeat;
 		background-position: 50% 0;
 		background-size: contain;
-		opacity: 0.5;
+		opacity: 0.3;
 		z-index: -1;
 	}
 
 	&:after {
 		top: auto;
-		bottom: -60%;
+		bottom: -17%;
 	}
 
 	&>* {
@@ -57,7 +57,8 @@ body {
 	background-color: $dark_bg;
 	position: relative;
 
-	&:before {
+	
+	.decor {
 		position: absolute;
 		content: '';
 		left: 50%;
@@ -69,9 +70,9 @@ body {
 		background-image: url('/assets/img/ghost.png');
 		background-position: 0 0;
 		background-size: contain;
+		background-repeat: no-repeat;
 		z-index: -1;
 		transform: translateX(-50%);
-
 	}
 }
 
@@ -165,11 +166,11 @@ p {
 }
 
 a {
-	color: $tertiary-color;
+	color: #fff;
 	transition: all .15s ease-in-out;
 
 	&:hover {
-		color: $primary-color;
+		text-decoration: none;
 	}
 }
 
