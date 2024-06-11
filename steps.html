@@ -8,14 +8,13 @@
     <title>GhostMixer</title>
     <link rel="shortcut icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" /> -->
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
 <body>
-    <div class="wrapper">
 
+    <div class="wrapper steps-page">
         <header class="header">
             <div class="container">
                 <div class="logo-box">
@@ -34,14 +33,13 @@
         </header>
         <main class="main">
 
-
             <div class="steps-holder">
                 <div class="step step_1">
                     <div class="head-box">
                         <a href="#" class="link-currency">
-					<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
-					Bitcoin
-				</a>
+						<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
+						Bitcoin
+					</a>
                         <div class="mixing-lvl">
                             Mixing level:
                             <img src="./assets/img/lvl.svg" alt="Bitcoin">
@@ -100,7 +98,7 @@
                             <div class="slider-track">
                                 <div class="range-slider" id="rangeSlider">
                                     <input type="range" min="0" max="100" value="20" class="slider" id="slider1">
-                                    <input type="range" min="0" max="100" value="50" class="slider" id="slider2">
+                                    <!-- <input type="range" min="0" max="100" value="50" class="slider" id="slider2"> -->
                                     <input type="range" min="0" max="100" value="80" class="slider" id="slider3">
                                 </div>
                             </div>
@@ -114,19 +112,68 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="btn-holder">
                         <button class="btn btn-primary next">Continue</button>
                     </div>
-
-
-
                 </div>
+
+                <div class="step step_2">
+                    <div class="head-box">
+                        <a href="#" class="link-currency back">
+						<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
+						Send your coins Bitcoin
+					</a>
+                    </div>
+
+                    <div class="qr-box">
+                        <div class="img-holder">
+                            <img src="./assets/img/qr.svg" alt="QR code">
+                        </div>
+                        <div class="text-col">
+                            <div class="info">
+                                <span class="name">Status:</span>
+                                <span class="status-info">Awaiting deposit...</span>
+                            </div>
+                            <div class="info">
+                                <span class="name">Time to pay:</span>
+                                <span class="status-info">1d 2h 11m</span>
+                            </div>
+                            <div class="info">
+                                <span class="name">Minimum to pay:</span>
+                                <span class="status-info">0.001 BTC</span>
+                            </div>
+                            <div class="info">
+                                <span class="name">Maximum to pay:</span>
+                                <span class="status-info">100 BTC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-box">
+                        <div class="copy-box">
+                            <input type="text" id="textField" value="TVdE3zk7BQ4pPD92VpU2ki6YcKXVEy1M4R">
+                            <button id="copyButton"></button>
+                        </div>
+                        <div class="address-box">
+                            <div class="info">
+                                <span class="name">Forwarding Address:</span>
+                                <span class="status-info">TBKr3wPqioA4HgUBCgPURvwbWvYdjhsU7R <br>after 1hr. 40min | 100%</span>
+                            </div>
+                            <div class="info">
+                                <span class="name">Fees:</span>
+                                <span class="status-info">2.2328% + 2×(Transaction Cost - 0.0001 BTC)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-holder">
+                        <button class="btn btn-primary">Continue</button>
+                    </div>
+                </div>
+                <p class="info-text">Make a payment with one transfer, if you need more transfers, create a new request</p>
             </div>
 
 
         </main>
-        <div id="overlay"></div>
         <footer class="footer">
             <div class="container">
                 <div class="footer-holder">
@@ -139,11 +186,10 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script async src="./assets/js/jquery.fancybox.min.js"></script>
-    <script async src="./assets/js/global.js"></script>
+        <script src="./assets/js/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script async src="./assets/js/global.js"></script>
 </body>
 
 </html>
+</div>
