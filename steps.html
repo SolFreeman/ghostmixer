@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>GhostMixer</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="logo-box">
+                    <a href="index.html" class="logo">
+				<img src="./assets/img/logo.svg" class="img-fluid" alt="logo">
+			</a>
+                </div>
+                <div class="language-bar">
+                    <div class="language-title">EN</div>
+                    <ul class="language-list">
+                        <li class="menu-item active"><a href="#">EN</a></li>
+                        <li class="menu-item"><a href="#">RU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+
+
+            <div class="steps-holder">
+                <div class="step step_1">
+                    <div class="head-box">
+                        <a href="#" class="link-currency">
+					<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
+					Bitcoin
+				</a>
+                        <div class="mixing-lvl">
+                            Mixing level:
+                            <img src="./assets/img/lvl.svg" alt="Bitcoin">
+                        </div>
+                    </div>
+                    <div class="line-box">
+                        <div class="line">
+                            <div class="hour-percent">
+                                <span class="percent">33.33%</span>
+                                <span class="hour">2h 26m</span>
+                            </div>
+                            <div class="input-holder">
+                                <input type="text" placeholder="Enter your Bitcoin address">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="hour-percent">
+                                <span class="percent">33.33%</span>
+                                <span class="hour">2h 26m</span>
+                            </div>
+                            <div class="input-holder">
+                                <input type="text" placeholder="Enter your Bitcoin address">
+                                <button class="clear-input"></button>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="hour-percent">
+                                <span class="percent">33.33%</span>
+                                <span class="hour">2h 26m</span>
+                            </div>
+                            <div class="input-holder">
+                                <input type="text" placeholder="Enter your Bitcoin address">
+                                <button class="clear-input"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="add-more-btn">+ add one more address</a>
+
+                    <div class="tabs-box">
+                        <div class="title">Service:</div>
+                        <ul class="tablist">
+                            <li><a class="active" href="#">Anonymization</a></li>
+                            <li><a href="#">Sanctioned funds</a></li>
+                            <li><a href="#">Very high risk</a></li>
+                        </ul>
+                    </div>
+                    <div class="sliders-area">
+                        <div class="first">
+                            <div class="title">Service fee: <span class="percent-box">3.325%</span></div>
+                            <div class="slider-wrapper">
+                                <input type="range" min="0" max="100" value="50" class="gradient-slider">
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="title">Percentage distribution: </div>
+                            <div class="slider-track">
+                                <div class="range-slider" id="rangeSlider">
+                                    <input type="range" min="0" max="100" value="20" class="slider" id="slider1">
+                                    <input type="range" min="0" max="100" value="50" class="slider" id="slider2">
+                                    <input type="range" min="0" max="100" value="80" class="slider" id="slider3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="third">
+                            <div class="title">Transfer delay: </div>
+                            <div class="slider-track">
+                                <input type="range" min="0" max="100" value="20" class="slider" id="slider1" oninput="updateSlider()">
+                                <input type="range" min="0" max="100" value="50" class="slider" id="slider2" oninput="updateSlider()">
+                                <input type="range" min="0" max="100" value="80" class="slider" id="slider3" oninput="updateSlider()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-holder">
+                        <button class="btn btn-primary next">Continue</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </main>
+        <div id="overlay"></div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-holder">
+                    <div class="logo-box">
+                        <a href="index.html" class="logo">
+					<img src="./assets/img/logo.svg" class="img-fluid" alt="logo">
+				</a>
+                    </div>
+                    <p><a class="terms_use" href="#">Terms of Use</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script async src="./assets/js/jquery.fancybox.min.js"></script>
+    <script async src="./assets/js/global.js"></script>
+</body>
+
+</html>
