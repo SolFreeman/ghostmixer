@@ -22,9 +22,30 @@ html {
 		background: radial-gradient(50% 50% at 50% 50%, #319049 0%, #151515 100%);
 		background-repeat: no-repeat;
 		background-position: 50% 0;
-		background-size: contain;
-		opacity: 0.3;
+		background-size: 150%;
+		opacity: 0.5;
 		z-index: -1;
+
+		@include media('>=tablet') {
+			background-size: contain;
+		}
+
+		
+	}
+
+	&.steps-page {
+		&:before {
+			background-size: 150%;
+			top: -36%;
+			opacity: .6;
+
+			@include media('>=tablet') {
+				background-size: contain;
+				top: -50%;
+				opacity: .6;
+			}
+		}
+
 	}
 
 	&:after {
@@ -57,7 +78,6 @@ body {
 	background-color: $dark_bg;
 	position: relative;
 
-	
 	.decor {
 		position: absolute;
 		content: '';
@@ -68,11 +88,16 @@ body {
 		max-height: 614px;
 		height: 100%;
 		background-image: url('./assets/img/ghost.png');
-		background-position: 0 0;
-		background-size: contain;
+		background-position: 50% 0;
+		background-size: 240%;
 		background-repeat: no-repeat;
 		z-index: -1;
 		transform: translateX(-50%);
+
+		@include media('>=tablet') {
+			background-position: 0 0;
+			background-size: contain;
+		}
 	}
 }
 
@@ -86,10 +111,6 @@ address {
 	box-sizing: border-box;
 }
 
-.wrap_page {
-	overflow: hidden;
-	margin-bottom: auto;
-}
 
 .scrolltop {
 	width: 100%;
@@ -100,40 +121,6 @@ address {
 	z-index: 20;
 }
 
-.muve-top {
-	position: absolute;
-	right: 20px;
-	bottom: 20px;
-	padding: 25px;
-	background: $muve-top-background;
-	color: $muve-top-color;
-	cursor: pointer;
-	transition: .2s;
-	border-radius: 50%;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.23);
-
-	&:before {
-		font-family: 'icomoon';
-		content: "\e903";
-		position: absolute;
-		font-size: 26px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-		@include media('>=tablet') {
-			font-size: 30px;
-		}
-	}
-
-	@include media('>=tablet') {
-		padding: 30px;
-	}
-
-	&:hover {
-		background: $secondary-color;
-	}
-}
 
 /*1*/
 [class*='brand-bg'] {
@@ -320,7 +307,7 @@ h2,
 	margin-bottom: 40px;
 	text-align: center;
 	// background: #5879EE;
-	background: linear-gradient(to right, #30B14F 0%, #45DB9D 100%);
+	background: linear-gradient(to right, #30B14F 0%, #45DB9D 50%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
@@ -565,71 +552,6 @@ input:checked+label {
 
 .scroll-heidden::-webkit-scrollbar {
 	width: 0px;
-}
-
-.social-list {
-	display: flex;
-	align-items: center;
-
-	li {
-		margin: 0 9px;
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		overflow: hidden;
-		text-align: center;
-		line-height: 36px;
-		padding-left: 0;
-
-		&:before {
-			display: none;
-		}
-
-		@include media('>=tablet') {
-			width: 60px;
-			height: 60px;
-			line-height: 67px;
-		}
-
-
-		&:first-child {
-			margin-left: 0;
-		}
-	}
-
-	a {
-		display: block;
-		background-color: $tertiary-color;
-		color: $white;
-		text-decoration: none;
-		height: 100%;
-		font-size: 16px;
-		transition: all .2s ease-in-out;
-
-		&:hover {
-			background-color: $tertiary-color;
-			color: $green-hover;
-		}
-
-		@include media('>=tablet') {
-			font-size: 26px;
-		}
-	}
-}
-
-.markup-link {
-	position: fixed;
-	bottom: 15px;
-	left: 15px;
-	color: white;
-	padding: 5px 10px;
-	background: black;
-	text-decoration: none;
-	border-radius: 50%;
-
-	&:hover {
-		color: #fec22d;
-	}
 }
 
 .slick-arrow {

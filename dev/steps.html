@@ -1,98 +1,148 @@
 @@include('templates/head.html')
-@@include('templates/header.html')
-<main class="main">
-
-
-	<div class="steps-holder">
-		<div class="step step_1">
-			<div class="head-box">
-				<a href="#" class="link-currency">
-					<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
-					Bitcoin
-				</a>
-				<div class="mixing-lvl">
-					Mixing level:
-					<img src="./assets/img/lvl.svg" alt="Bitcoin">
-				</div>
-			</div>
-			<div class="line-box">
-				<div class="line">
-					<div class="hour-percent">
-						<span class="percent">33.33%</span>
-						<span class="hour">2h 26m</span>
-					</div>
-					<div class="input-holder">
-						<input type="text" placeholder="Enter your Bitcoin address">
+<div class="wrapper steps-page">
+	@@include('templates/header.html')
+	<main class="main">
+	
+		<div class="steps-holder">
+			<div class="step step_1">
+				<div class="head-box">
+					<a href="#" class="link-currency">
+						<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
+						Bitcoin
+					</a>
+					<div class="mixing-lvl">
+						Mixing level:
+						<img src="./assets/img/lvl.svg" alt="Bitcoin">
 					</div>
 				</div>
-				<div class="line">
-					<div class="hour-percent">
-						<span class="percent">33.33%</span>
-						<span class="hour">2h 26m</span>
+				<div class="line-box">
+					<div class="line">
+						<div class="hour-percent">
+							<span class="percent">33.33%</span>
+							<span class="hour">2h 26m</span>
+						</div>
+						<div class="input-holder">
+							<input type="text" placeholder="Enter your Bitcoin address">
+						</div>
 					</div>
-					<div class="input-holder">
-						<input type="text" placeholder="Enter your Bitcoin address">
-						<button class="clear-input"></button>
+					<div class="line">
+						<div class="hour-percent">
+							<span class="percent">33.33%</span>
+							<span class="hour">2h 26m</span>
+						</div>
+						<div class="input-holder">
+							<input type="text" placeholder="Enter your Bitcoin address">
+							<button class="clear-input"></button>
+						</div>
 					</div>
-				</div>
-				<div class="line">
-					<div class="hour-percent">
-						<span class="percent">33.33%</span>
-						<span class="hour">2h 26m</span>
-					</div>
-					<div class="input-holder">
-						<input type="text" placeholder="Enter your Bitcoin address">
-						<button class="clear-input"></button>
-					</div>
-				</div>
-			</div>
-			<a href="#" class="add-more-btn">+ add one more address</a>
-
-			<div class="tabs-box">
-				<div class="title">Service:</div>
-				<ul class="tablist">
-					<li><a class="active" href="#">Anonymization</a></li>
-					<li><a href="#">Sanctioned funds</a></li>
-					<li><a href="#">Very high risk</a></li>
-				</ul>
-			</div>
-			<div class="sliders-area">
-				<div class="first">
-					<div class="title">Service fee: <span class="percent-box">3.325%</span></div>
-					<div class="slider-wrapper">
-						<input type="range" min="0" max="100" value="50" class="gradient-slider">
-					</div>
-				</div>
-				<div class="second">
-					<div class="title">Percentage distribution: </div>
-					<div class="slider-track">
-						<div class="range-slider" id="rangeSlider">
-							<input type="range" min="0" max="100" value="20" class="slider" id="slider1">
-							<input type="range" min="0" max="100" value="50" class="slider" id="slider2">
-							<input type="range" min="0" max="100" value="80" class="slider" id="slider3">
+					<div class="line">
+						<div class="hour-percent">
+							<span class="percent">33.33%</span>
+							<span class="hour">2h 26m</span>
+						</div>
+						<div class="input-holder">
+							<input type="text" placeholder="Enter your Bitcoin address">
+							<button class="clear-input"></button>
 						</div>
 					</div>
 				</div>
-				<div class="third">
-					<div class="title">Transfer delay: </div>
-					<div class="slider-track">
-						<input type="range" min="0" max="100" value="20" class="slider" id="slider1" oninput="updateSlider()">
-						<input type="range" min="0" max="100" value="50" class="slider" id="slider2" oninput="updateSlider()">
-						<input type="range" min="0" max="100" value="80" class="slider" id="slider3" oninput="updateSlider()">
+				<a href="#" class="add-more-btn">+ add one more address</a>
+	
+				<div class="tabs-box">
+					<div class="title">Service:</div>
+					<ul class="tablist">
+						<li><a class="active" href="#">Anonymization</a></li>
+						<li><a href="#">Sanctioned funds</a></li>
+						<li><a href="#">Very high risk</a></li>
+					</ul>
+				</div>
+				<div class="sliders-area">
+					<div class="first">
+						<div class="title">Service fee: <span class="percent-box">3.325%</span></div>
+						<div class="slider-wrapper">
+							<input type="range" min="0" max="100" value="50" class="gradient-slider">
+						</div>
+					</div>
+					<div class="second">
+						<div class="title">Percentage distribution: </div>
+						<div class="slider-track">
+							<div class="range-slider" id="rangeSlider">
+								<input type="range" min="0" max="100" value="20" class="slider" id="slider1">
+								<!-- <input type="range" min="0" max="100" value="50" class="slider" id="slider2"> -->
+								<input type="range" min="0" max="100" value="80" class="slider" id="slider3">
+							</div>
+						</div>
+					</div>
+					<div class="third">
+						<div class="title">Transfer delay: </div>
+						<div class="slider-track">
+							<input type="range" min="0" max="100" value="20" class="slider" id="slider1" oninput="updateSlider()">
+							<input type="range" min="0" max="100" value="50" class="slider" id="slider2" oninput="updateSlider()">
+							<input type="range" min="0" max="100" value="80" class="slider" id="slider3" oninput="updateSlider()">
+						</div>
 					</div>
 				</div>
+				<div class="btn-holder">
+					<button class="btn btn-primary next">Continue</button>
+				</div>
 			</div>
+	
+			<div class="step step_2">
+				<div class="head-box">
+					<a href="#" class="link-currency back">
+						<img src="./assets/img/BitcoinBadge.svg" alt="Bitcoin">
+						Send your coins Bitcoin
+					</a>
+				</div>
+	
+				<div class="qr-box">
+					<div class="img-holder">
+						<img src="./assets/img/qr.svg" alt="QR code">
+					</div>
+					<div class="text-col">
+						<div class="info">
+							<span class="name">Status:</span>
+							<span class="status-info">Awaiting deposit...</span>
+						</div>
+						<div class="info">
+							<span class="name">Time to pay:</span>
+							<span class="status-info">1d 2h 11m</span>
+						</div>
+						<div class="info">
+							<span class="name">Minimum to pay:</span>
+							<span class="status-info">0.001 BTC</span>
+						</div>
+						<div class="info">
+							<span class="name">Maximum to pay:</span>
+							<span class="status-info">100 BTC</span>
+						</div>
+					</div>
+				</div>
 
-			<div class="btn-holder">
-				<button class="btn btn-primary next">Continue</button>
+				<div class="bottom-box">
+					<div class="copy-box">
+						<input type="text" id="textField" value="TVdE3zk7BQ4pPD92VpU2ki6YcKXVEy1M4R">
+						<button id="copyButton"></button>
+					</div>
+					<div class="address-box">
+						<div class="info">
+							<span class="name">Forwarding Address:</span>
+							<span class="status-info">TBKr3wPqioA4HgUBCgPURvwbWvYdjhsU7R <br>after 1hr. 40min | 100%</span>
+						</div>
+						<div class="info">
+							<span class="name">Fees:</span>
+							<span class="status-info">2.2328% + 2×(Transaction Cost - 0.0001 BTC)</span>
+						</div>
+					</div>
+				</div>
+				<div class="btn-holder">
+					<button class="btn btn-primary">Continue</button>
+				</div>
 			</div>
-
-			
-
+			<p class="info-text">Make a payment with one transfer, if you need more transfers, create a new request</p>
 		</div>
-	</div>
-
-
-</main>
-<div id="overlay"></div>
-@@include('templates/footer.html')
+	
+	
+	</main>
+	@@include('templates/footer.html')
+</div>

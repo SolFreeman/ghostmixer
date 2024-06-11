@@ -52,10 +52,3 @@ $breadcrumbs-last-child: #B2B1B1;
 
 $muve-top-background: $primary-color;
 $muve-top-color: #fff;
-
-.main-gradient {
-    background: rgb(125,244,205);
-    background: -moz-linear-gradient(-45deg,  rgba(125,244,205,1) 0%, rgba(254,178,0,1) 65%, rgba(255,126,0,1) 100%);
-    background: -webkit-linear-gradient(-45deg,  rgba(125,244,205,1) 0%,rgba(254,178,0,1) 65%,rgba(255,126,0,1) 100%);
-    background: linear-gradient(135deg,  rgba(125,244,205,1) 0%,rgba(254,178,0,1) 65%,rgba(255,126,0,1) 100%);
-}
