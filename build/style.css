@@ -26,11 +26,13 @@ html {
   .wrapper:after, .wrapper:before {
     position: absolute;
     content: '';
-    top: -10%;
-    left: auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     right: auto;
     width: 100%;
-    height: 1024px;
+    height: 1042px;
+    max-width: 1580px;
     background: radial-gradient(50% 50% at 50% 50%, #319049 0%, #151515 100%);
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -42,16 +44,15 @@ html {
         background-size: contain; } }
   .wrapper.steps-page:before {
     background-size: 150%;
-    top: -36%;
     opacity: .6; }
     @media (min-width: 768px) {
       .wrapper.steps-page:before {
         background-size: contain;
-        top: -50%;
         opacity: .6; } }
   .wrapper:after {
     top: auto;
-    bottom: -17%; }
+    bottom: 0;
+    transform: translate(-50%, 80%); }
   .wrapper > * {
     z-index: 1; }
 
@@ -1422,7 +1423,7 @@ h1 {
               display: none; } }
       .safe-steps .tabs__caption .title {
         font-size: 24px;
-        color: #cfcfcf;
+        color: #fff;
         display: block;
         font-weight: 600;
         transition: color .1s ease-in;
@@ -1570,7 +1571,8 @@ h1 {
   .faq-area .title-col {
     max-width: 600px; }
     .faq-area .title-col p {
-      font-size: 18px; }
+      font-size: 18px;
+      color: #CFCFCF; }
       @media (min-width: 768px) {
         .faq-area .title-col p {
           font-size: 24px; } }
@@ -1801,7 +1803,7 @@ h1 {
     justify-content: space-between;
     margin: 0 0 20px;
     padding: 0 0 20px;
-    border-bottom: 1px solid #c4c4c4; }
+    border-bottom: 2px solid rgba(196, 196, 196, 0.4); }
     @media (min-width: 768px) {
       .step .head-box {
         border: none;
@@ -2079,7 +2081,7 @@ h1 {
   .step .second .slider-track {
     position: relative;
     height: 6px;
-    background: linear-gradient(to right, #4CAF50 20%, #FFA500 20%, #FFA500 50%, #0000FF 50%, #0000FF 80%, #0000FF 80%);
+    background: linear-gradient(to right, #4CAF50 20%, #FFA500 20%, #FFA500 50%, #FFA500 50%, #FFA500 80%, #0000FF 80%);
     border-radius: 3px;
     margin-top: 10px; }
   .step .second .slider {
@@ -2171,7 +2173,7 @@ h1 {
     border: 2px solid #0000FF; }
   .step .sliders-area {
     padding: 20px 0 0;
-    border: 2px solid #c4c4c4;
+    border: 2px solid rgba(196, 196, 196, 0.4);
     border-width: 2px 0;
     margin: 0 0 20px; }
     @media (min-width: 768px) {

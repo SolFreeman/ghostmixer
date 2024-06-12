@@ -409,7 +409,7 @@ h1 {
 
 			.title {
 				font-size: 24px;
-				color: rgba(207, 207, 207, 1);
+				color: #fff;
 				display: block;
 				font-weight: 600;
 				transition: color .1s ease-in;
@@ -635,6 +635,7 @@ h1 {
 
 		p {
 			font-size: 18px;
+			color: #CFCFCF;
 	
 			@include media('>=tablet') {
 				font-size: 24px;
