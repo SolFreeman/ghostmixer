@@ -36,12 +36,10 @@ html {
 	&.steps-page {
 		&:before {
 			background-size: 150%;
-			// top: -36%;
 			opacity: .6;
 
 			@include media('>=tablet') {
 				background-size: contain;
-				// top: -50%;
 				opacity: .6;
 			}
 		}
@@ -148,8 +146,8 @@ address {
 
 /*2*/
 ::selection {
-	color: $tertiary-color;
-	background: $secondary-color;
+	background: rgba(0, 0, 0, .75);
+	color: $white;
 }
 
 p {

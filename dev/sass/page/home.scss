@@ -508,6 +508,7 @@ h1 {
 
 		.slick-list {
 			padding-top: 75px;
+			width: 100%;
 		}
 	}
 }
@@ -531,7 +532,8 @@ h1 {
 		// display: flex;
 		justify-content: center;
 		align-items: center;
-		height: auto;		
+		height: auto;
+		background-color: #181818;	
 
 		& > * {
 			position: relative;
