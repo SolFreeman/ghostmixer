@@ -126,8 +126,8 @@ address {
 
 /*2*/
 ::selection {
-  color: #00A39C;
-  background: #33535F; }
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff; }
 
 p {
   margin: 0 0 27px; }
@@ -1486,7 +1486,8 @@ h1 {
   margin: 0 0 220px; }
   @media (min-width: 769px) {
     .trust-us .slick-list {
-      padding-top: 75px; } }
+      padding-top: 75px;
+      width: 100%; } }
 
 .trust-slider {
   display: flex;
@@ -1502,7 +1503,8 @@ h1 {
     margin: 0;
     justify-content: center;
     align-items: center;
-    height: auto; }
+    height: auto;
+    background-color: #181818; }
     .trust-slider .slide > * {
       position: relative;
       z-index: 1; }
